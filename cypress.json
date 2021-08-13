@@ -1,0 +1,13 @@
+{
+  "env": {
+    "homePage": "https://www.astrology.com/us/home.aspx",
+    "planetsHomepage": "https://www.astrology.com/planets",
+    "dailyHoroHomepage": "https://www.astrology.com/horoscope/daily.html",
+    "learnHomepage": "https://www.astrology.com/learn",
+    "compatibilityHomepage": "https://www.astrology.com/compatibility",
+    "tarotHomepage": "https://www.astrology.com/tarot.html",
+    "shopHomepage": "https://shop.astrology.com/",
+    "watchForFIleChanges": false
+  },
+  "projectId": "5zbcu7"
+}
