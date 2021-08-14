@@ -71,7 +71,7 @@ ImageProductsVerification() {
     cy.scrollTo(0, 2500)
     cy.get(shopPage_locators.sortButton).select('popularity');
     // confirm the selected value
-    cy.get(shopPage_locators.sortButton).should('have.value', 'popularity') // This works just fine!
+    cy.get(shopPage_locators.sortButton).should('have.value', 'popularity') 
     
 
     }
