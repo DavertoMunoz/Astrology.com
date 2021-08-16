@@ -66,6 +66,17 @@ ImageProductsVerification() {
     cy.get(shopPage_locators.home2021LoveTarotPrice).should('contain.text', '19.95');
     cy.get(shopPage_locators.homeAplusSubPrice).should('contain.text', '29.97');
     }
+
+    sortOrderProducts() {
+    cy.scrollTo(0, 2500)
+    cy.get(shopPage_locators.sortButton).select('popularity');
+    // confirm the selected value
+    cy.get(shopPage_locators.sortButton).should('have.value', 'popularity') 
+    
+
+    }
+
+    
 }
 
 

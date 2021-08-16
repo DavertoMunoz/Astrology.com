@@ -55,6 +55,15 @@ export default {
     home2021LoveTarotPrice: ".post-7638 bdi", // 19.95
     homeAplusSubPrice: ".post-96410 bdi", // 29.97
 
+    // Sort button
+    sortButton: "#main > div:nth-of-type(2) [name='orderby']", // ":nth-child(4) > .woocommerce-ordering > .orderby" 
+    sortDefault: "#main > div:nth-of-type(1) [value='menu_order']",
+    sortByPopularity: "#main > div:nth-of-type(1) [value='popularity']", 
+    sortByLatest: "#main > div:nth-of-type(1) [value='date']",
+    sortLowToHigh: "#main > div:nth-of-type(1) [value='price']",
+    sortHightoLow: "#main > div:nth-of-type(1) [value='price-desc']",
+
+    
 
 
 
