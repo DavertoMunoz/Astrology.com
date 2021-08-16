@@ -73,6 +73,37 @@ ImageProductsVerification() {
     // confirm the selected value
     cy.get(shopPage_locators.sortButton).should('have.value', 'popularity') 
     
+    cy.go('back')
+
+    cy.scrollTo(0, 2500)
+    cy.get(shopPage_locators.sortButton).select('date');
+    // confirm the selected value
+    cy.get(shopPage_locators.sortButton).should('have.value', 'date') 
+    
+    cy.go('back')
+
+    cy.scrollTo(0, 2500)
+    cy.get(shopPage_locators.sortButton).select('price');
+    // confirm the selected value
+    cy.get(shopPage_locators.sortButton).should('have.value', 'price') 
+    
+    cy.go('back')
+
+    cy.scrollTo(0, 2500)
+    cy.get(shopPage_locators.sortButton).select('price-desc');
+    // confirm the selected value
+    cy.get(shopPage_locators.sortButton).should('have.value', 'price-desc') 
+    
+    cy.go('back')
+
+    cy.scrollTo(0, 2500)
+    cy.get(shopPage_locators.sortButton).select('menu_order');
+    // confirm the selected value
+    cy.get(shopPage_locators.sortButton).should('have.value', 'menu_order') 
+    
+    cy.go('back')
+
+
 
     }
 
