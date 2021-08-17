@@ -6,7 +6,7 @@ export default {
     shopDescription: ".page-description > p", 
 
     // Product Images
-    homeaugustHoroImg: "[alt='august horoscope']",
+    homeCurrentHoroImg: "[alt='august horoscope']",
     homebirthChartImg: "[alt='birth-natal-chart']",
     homeLoveCompImg: "[alt='love-compatibility']",
     homeYesNoTarotImg: "[alt='Yes No Tarot']",
@@ -31,7 +31,7 @@ export default {
     homeAplusSubImg: "[src='https://shop.astrology.com/wp-content/uploads/sites/5/2020/09/acomstoregraphics-17-324x324.png']",
 
     // Product prices
-    homeaugustHoroPrice: ".post-176620 bdi", // 14.95
+    homeCurrentMonthHoroPrice: ".post-176620 bdi", // 14.95
     homebirthChartPrice: ".post-22 bdi", // 24.95
     homeLoveCompPrice: ".post-25 bdi", // 16.95
     homeYesNoTarotPrice: ".post-15645 bdi", //8.95
@@ -63,10 +63,15 @@ export default {
     sortLowToHigh: "#main > div:nth-of-type(1) [value='price']",
     sortHightoLow: "#main > div:nth-of-type(1) [value='price-desc']",
 
+    // Monthly page locators, forms, etc
+    reportFirstName: '#first-name',
+    reportGenderSel: '.select > .field-skin',
+    reportDoB: '#date-of-birth',
+    daySelected: ".xdsoft_day_of_week0[data-date='6'] > div",
+    timeOfBirth: "#time-of-birth",
+    timeSelected: "div:nth-of-type(488)",
     
-
-
-
+    
 
 
 }
