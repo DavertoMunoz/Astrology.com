@@ -20,7 +20,11 @@ it('Confirm Products Prices in Shop Main page', function() {
     shopPage.productsPricesVerification();
 })
 
-it.only('Sort Products by different order', function() {
+it('Sort Products by different order', function() {
     shopPage.sortOrderProducts();
+})
+
+it.only('Monthly purchase report flow', function() {
+    shopPage.monthlyReportPurchase();
 })
 })

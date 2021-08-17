@@ -23,6 +23,9 @@ import './commands'
 // so it's applied to all spec files
 // cypress/support/index.js
 
+require('cypress-xpath')
+
+
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test
