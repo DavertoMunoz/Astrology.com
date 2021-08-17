@@ -24,7 +24,7 @@ it('Sort Products by different order', function() {
     shopPage.sortOrderProducts();
 })
 
-it.only('Monthly purchase report flow', function() {
+it.skip('Monthly purchase report flow', function() {
     shopPage.monthlyReportPurchase();
 })
 })

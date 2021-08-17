@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import dailyHoro_Locators from "../../support/dailyHoro_Locators";
+
 class HoroscopesDailyPage {
 
 
@@ -10,42 +12,26 @@ cy.visit('https://www.astrology.com/horoscope/daily.html');
 
 theSkyToday() {
 
-    // Selectors
-    let titleDaily = '.snippet > .section__title';
-    let snippetTitle = ':nth-child(3) > .snippet__title';
-    let iconsContainer = '.snippet > div:nth-of-type(1) > .icons-container'; // Container of icons (sun, moon, trine, pluto, etc)
-    let textAd = '.text-link';
-    let textAdLink = '#ntv';
-    let firstParagraph = '.snippet > .snippet__body'; // First paragraph of firsdt part
-    let secondParagraph = '.snippet > .snippet__header p'; // Second paragrap of first part - Sometimes there is no second paragraph here.
-    let carouselContainer = '.carousel-container';
-    let carouselWeeklyIcon = '.icon-weekly';
-    let carouselMonthlyIcon = '.icon-monthly';
-    let carouselYearlyIcon = '.icon-yearly';    
-    let carouselChineseIcon = '.icon-chinese'
-    let carouselLoveIcon = '.icon-love';
-    let carouseWorkIcon = '.icon-work';
-    let carouselDateIcon = '.icon-love';
-    let carouselNextButton = '.next';
-    let carouselBackButton = '.previous'
-    
     // Assertions
-    cy.get(titleDaily).should('be.visible');
-    cy.get(snippetTitle).should('be.visible'); 
-    cy.get(iconsContainer).should('be.visible'); 
-    cy.get(textAd).should('be.visible'); 
-    cy.get(firstParagraph).should('be.visible'); 
-    cy.get(secondParagraph).should('be.visible'); // Sometimes there is no second paragraph here.
-    cy.get(carouselWeeklyIcon).should('be.visible'); 
-    cy.get(carouselMonthlyIcon).should('be.visible'); 
-    cy.get(carouselNextButton).click();
-    cy.get(carouselYearlyIcon).should('be.visible'); 
-    cy.get(carouselChineseIcon).should('be.visible'); 
-    cy.get(carouselNextButton).click();
-    cy.get(carouselLoveIcon).should('be.visible');
-    cy.get(carouseWorkIcon).should('be.visible'); 
-    cy.get(carouselNextButton).click();
-    cy.get(carouselDateIcon).should('be.visible'); 
+    cy.get(dailyHoro_Locators.titleDaily).should('be.visible');
+    cy.get(dailyHoro_Locators.snippetTitle).should('be.visible'); 
+    cy.get(dailyHoro_Locators.iconsContainer).should('be.visible'); 
+    cy.get(dailyHoro_Locators.textAd).should('be.visible');
+    cy.get(dailyHoro_Locators.textAdLink).click();
+    cy.url().should('eq', 'https://shop.astrology.com/product/astrology-plus/?utm_source=direct&utm_medium=acquisition&utm_campaign=aplus-text-link');
+    cy.go('back'); 
+    cy.get(dailyHoro_Locators.firstParagraph).should('be.visible'); 
+    cy.get(dailyHoro_Locators.secondParagraph).should('be.visible'); // Sometimes there is no second paragraph here.
+    cy.get(dailyHoro_Locators.carouselWeeklyIcon).should('be.visible'); 
+    cy.get(dailyHoro_Locators.carouselMonthlyIcon).should('be.visible'); 
+    cy.get(dailyHoro_Locators.carouselNextButton).click();
+    cy.get(dailyHoro_Locators.carouselYearlyIcon).should('be.visible'); 
+    cy.get(dailyHoro_Locators.carouselChineseIcon).should('be.visible'); 
+    cy.get(dailyHoro_Locators.carouselNextButton).click();
+    cy.get(dailyHoro_Locators.carouselLoveIcon).should('be.visible');
+    cy.get(dailyHoro_Locators.carouseWorkIcon).should('be.visible'); 
+    cy.get(dailyHoro_Locators.carouselNextButton).click();
+    cy.get(dailyHoro_Locators.carouselDateIcon).should('be.visible'); 
 
 
 }

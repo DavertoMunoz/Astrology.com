@@ -42,7 +42,7 @@ ImageProductsVerification() {
 }
 
     productsPricesVerification() {
-    cy.get(shopPage_locators.homeCurrentMonthHoroPrice).should('contain.text', '14.95');
+    cy.get(shopPage_locators.homeaugustHoroPrice).should('contain.text', '14.95');
     cy.get(shopPage_locators.homebirthChartPrice).should('contain.text', '24.95');
     cy.get(shopPage_locators.homeLoveCompPrice).should('contain.text', '16.95');
     cy.get(shopPage_locators.homeYesNoTarotPrice).should('contain.text', '8.95');
@@ -103,19 +103,18 @@ ImageProductsVerification() {
     }
 
     monthlyReportPurchase() {
-    cy.get(shopPage_locators.homeCurrentHoroImg).click();
-    cy.get(shopPage_locators.homeCurrentMonthHoroPrice).should('be.visible');
-    cy.get(shopPage_locators.reportFirstName).type('Ramiroquai');
-    cy.get(shopPage_locators.reportGenderSel).select('Male');
-    cy.get(shopPage_locators.reportDoB).type('January 12, 1980');
-    cy.get(shopPage_locators.reportDoB).click();
-    cy.get(shopPage_locators.timeOfBirth).click();
-    // cy.get('.product-template-default > div:nth-of-type(5)').focus().pause();
-    
-    
+        cy.get(shopPage_locators.homeCurrentHoroImg).click();
+        cy.get(shopPage_locators.reportFirstName).type('Juliancito');
+        cy.get(shopPage_locators.reportGenderSel).select('Male');
+        cy.get(shopPage_locators.reportDoB).type('January 20, 1981').click();
+        cy.get(shopPage_locators.timeOfBirth).click();
+        
+
 
     }
-}
 
     
+}
+
+
 export default ShopPage
