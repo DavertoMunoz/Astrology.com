@@ -20,5 +20,12 @@ it('Open daily page and confirm main elements', function() {
     horoscopesDaily.theSkyToday();
 
 })
+it('Verify zodiac signs column elements', function() {
+    horoscopesDaily.signListVerification();
+})
+
+it('Sign preview description verification', function() {
+    horoscopesDaily.signPreviewVerification();
+})
 
 })

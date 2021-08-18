@@ -35,6 +35,73 @@ theSkyToday() {
 
 
 }
+
+signListVerification() {
+    cy.get(dailyHoro_Locators.dailyAriesImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/aries.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyTaurusImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/taurus.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyGeminiImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/gemini.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyCancerImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/cancer.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyLeoImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/leo.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyVirgoImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/virgo.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyLibraImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/libra.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyScorpioImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/scorpio.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailySagittariusImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/sagittarius.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyCapricornImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/capricorn.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyAquariusImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/aquarius.html');
+    cy.go('back');
+
+    cy.get(dailyHoro_Locators.dailyPiscesImg).should('be.visible').click();
+    cy.url().should('contain', '/daily/pisces.html');
+    cy.go('back');
+
+}
+
+signPreviewVerification() {
+    cy.get(dailyHoro_Locators.dailyAriesPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyTaurusPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyGeminiPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyCancerPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyLeoPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyVirgoPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyLibraPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyScorpioPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailySagittariusPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyCapricornPereview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyAquariusPreview).should('be.visible');
+    cy.get(dailyHoro_Locators.dailyPiscesPreview).should('be.visible');
+}
+
 }
 
 export default HoroscopesDailyPage
