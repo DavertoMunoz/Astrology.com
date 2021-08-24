@@ -23,7 +23,6 @@ cy.visit(Cypress.env('learnHomepage'));
 
 learnWidgetsVerification() { // COMPLETED
 
-
 // Assertions
 cy.get(learnPage_locators.zodiacSignsWidgetTitle).should('contain' , 'Zodiac');
 cy.get(learnPage_locators.zodiacSignsWidgetImage).should('be.visible');

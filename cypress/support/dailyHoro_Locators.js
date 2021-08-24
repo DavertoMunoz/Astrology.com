@@ -10,7 +10,7 @@ export default {
     iconsContainer: '.snippet > div:nth-of-type(1) > .icons-container', // Container of icons (sun, moon, trine, pluto, etc)
     textAd: '.text-link',
     textAdLink: '#ntv',
-    firstParagraph: '.snippet > .snippet__body', // First paragraph of firsdt part
+    firstParagraph: '.snippet > .snippet__body', // First paragraph of first part
     secondParagraph: '.snippet > .snippet__header p', // Second paragrap of first part - Sometimes there is no second paragraph here.
     carouselContainer: '.carousel-container',
     carouselWeeklyIcon: '.icon-weekly',
@@ -23,7 +23,7 @@ export default {
     carouselNextButton: '.next',
     carouselBackButton: '.previous',
 
-     // list of Zodiac sign
+     // list of Zodiac sign images
      dailyAriesImg: "[alt='aries']",
      dailyTaurusImg: "[alt='taurus']",
      dailyGeminiImg: "[alt='gemini']",

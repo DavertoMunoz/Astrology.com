@@ -1,6 +1,7 @@
 {
   "env": {
     "homePage": "https://www.astrology.com/us/home.aspx",
+    "weeklyHomepage": "https://www.astrology.com/us/horoscope/index-weekly.aspx",
     "planetsHomepage": "https://www.astrology.com/planets",
     "dailyHoroHomepage": "https://www.astrology.com/horoscope/daily.html",
     "learnHomepage": "https://www.astrology.com/learn",

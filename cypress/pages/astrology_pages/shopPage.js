@@ -14,7 +14,7 @@ ImageProductsVerification() {
     cy.get(shopPage_locators.shopTitle).should('be.visible');
     cy.get(shopPage_locators.shopDescription).should('contain.text', 'Welcome to the Astrology.com Shop! Complete with personalized horoscopes, birth chart, love compatibility, tarot readings, and more, take the first step at unlocking your destiny!');
 
-    cy.get(shopPage_locators.homeaugustHoroImg).should('be.visible');
+    cy.get(shopPage_locators.homeCurrentHoroImg).should('be.visible');
     cy.get(shopPage_locators.homebirthChartImg).should('be.visible');
     cy.get(shopPage_locators.homeLoveCompImg).should('be.visible');
     cy.get(shopPage_locators.homeLoveCompImg).should('be.visible');
@@ -42,7 +42,7 @@ ImageProductsVerification() {
 }
 
     productsPricesVerification() {
-    cy.get(shopPage_locators.homeaugustHoroPrice).should('contain.text', '14.95');
+    cy.get(shopPage_locators.homeCurrentMonthHoroPrice).should('contain.text', '14.95');
     cy.get(shopPage_locators.homebirthChartPrice).should('contain.text', '24.95');
     cy.get(shopPage_locators.homeLoveCompPrice).should('contain.text', '16.95');
     cy.get(shopPage_locators.homeYesNoTarotPrice).should('contain.text', '8.95');
@@ -57,7 +57,7 @@ ImageProductsVerification() {
     cy.get(shopPage_locators.homeTarotAngelsPrice).should('contain.text', '11.95');
     cy.get(shopPage_locators.homeCareerReportPrice).should('contain.text', '19.95');
     cy.get(shopPage_locators.homeTransitsReportPrice).should('contain.text', '19.95');
-    cy.get(shopPage_locators.homeChakraTarotPrice).should('contain.text', '11.96');
+    cy.get(shopPage_locators.homeChakraTarotPrice).should('contain.text', '14.95');
     cy.get(shopPage_locators.home2021HoroPrice).should('contain.text', '24.95');
     cy.get(shopPage_locators.home2021NumerologyPrice).should('contain.text', '19.95');
     cy.get(shopPage_locators.home2021VedicPrice).should('contain.text', '19.95');
