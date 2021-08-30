@@ -37,7 +37,7 @@ verifyMainCardContainer() {
     cy.get(tarotPage_locators.flirtCardSub).should('contain.text', "Crushing on someone but don't know what your next move should be?");
     cy.get(tarotPage_locators.yinYangCardSub).should('contain.text', 'When your life is off-kilter, your Yin Yang Tarot can help.');
 
-    // check all the tarot pages and titles
+    // check all the tarot pages and titles.
     cy.get(tarotPage_locators.dailyTarotCard).click();
     cy.get('.page__title').should('contain.text', 'Daily Tarot Reading');
     cy.go('back');
